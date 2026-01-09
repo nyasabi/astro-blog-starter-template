@@ -5,46 +5,137 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外装大学 - Gaisou University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>外装大学</h1>
+                    <p class="logo-sub">GAISOU UNIVERSITY</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#about">大学紹介</a></li>
+                    <li><a href="#faculties">学部・学科</a></li>
+                    <li><a href="#admission">入試情報</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>未来を創造する学びの場</h2>
+                <p>革新と伝統が交差する、次世代のリーダーを育成</p>
+                <button class="cta-button">資料請求</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">最新ニュース</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-date">2026.01.08</span>
+                    <h3>2026年度入学試験要項を公開しました</h3>
+                    <p>一般選抜、総合型選抜の詳細について掲載しています。</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">2026.01.05</span>
+                    <h3>オープンキャンパス開催のお知らせ</h3>
+                    <p>3月15日（土）に春のオープンキャンパスを開催します。</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">2025.12.20</span>
+                    <h3>国際交流プログラム募集開始</h3>
+                    <p>2026年度の海外留学プログラムの募集を開始しました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title">外装大学の特徴</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>充実した教育環境</h3>
+                    <p>最先端の設備と経験豊富な教員陣による質の高い教育を提供します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>グローバルな視点</h3>
+                    <p>世界30カ国以上の大学と提携し、国際的な学びの機会を提供します。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>高い就職実績</h3>
+                    <p>就職率98%を誇り、キャリアサポート体制も万全です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faculties" id="faculties">
+        <div class="container">
+            <h2 class="section-title">学部・学科</h2>
+            <div class="faculties-grid">
+                <div class="faculty-card">
+                    <h3>人文学部</h3>
+                    <p>文学科 / 歴史学科 / 哲学科</p>
+                </div>
+                <div class="faculty-card">
+                    <h3>経済学部</h3>
+                    <p>経済学科 / 経営学科</p>
+                </div>
+                <div class="faculty-card">
+                    <h3>理工学部</h3>
+                    <p>情報工学科 / 建築学科 / 環境学科</p>
+                </div>
+                <div class="faculty-card">
+                    <h3>国際学部</h3>
+                    <p>国際関係学科 / 外国語学科</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>外装大学</h4>
+                    <p>〒123-4567<br>東京都○○区××1-2-3<br>TEL: 03-1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#about">大学紹介</a></li>
+                        <li><a href="#faculties">学部・学科</a></li>
+                        <li><a href="#admission">入試情報</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>Email: info@gaisou.ac.jp<br>受付時間: 平日 9:00-17:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaisou University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </html>
